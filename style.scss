@@ -95,6 +95,152 @@ header {
 .menu li a:hover {
     color: #000;
 }
+main{
+    height: 90vh;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70%  30% ;
+    grid-template-rows: 50vh 50vh;
+    background-color: gray;
+
+}
+.right{
+    background-color: rgb(240, 250, 250);
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+}
+
+.left{
+    background-color: rgb(129, 156, 156);
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    overflow-y: scroll;
+
+}
+.Historique {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+.Historique .his {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Historique .his h1 {
+    color: rgba( 23 86 118 );
+    font-size: 40px;
+}
+.Historique .his p {
+    font-size: 12px;
+    color: #999;
+}
+
+.Historique .toire {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Historique .toire img {
+    width: 100%;
+    animation: animate 3s linear;
+    transition: 0.7s;
+}
+
+/* animation image */
+
+@keyframes animate {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.passions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(35, 9, 3, 0.2);
+    padding: 50px 10px;
+}
+.mini_title {
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgba( 44 110 73 );
+    text-transform: capitalize;
+}
+.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #273e60;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.passionate {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+.passionate .passion {
+    height: 280px;
+    width: 70%;
+    background-color: rgba(176 208 211 /0.9);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.passionate .passion  img {
+    width: 130px;
+    height: 120px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+.passionate .passion p {
+    text-align: center;
+    font-size: 18px;
+
+}
+/*Scrollbar CSS*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba( 44 110 73 );
+}
+.left::-webkit-scrollbar {
+    width: 5px;
+}
+.left::-webkit-scrollbar-thumb {
+    background-color: rgb(202, 71, 54);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    background-color: rgba(176 208 211 /0.9);
+}
 
 
 /* Responsive */
