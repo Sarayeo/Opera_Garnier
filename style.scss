@@ -25,10 +25,11 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(176 208 211 /0.9);
-    box-shadow: 0 0 10px rgba(35, 9, 3, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(44, 29, 25, 0.5);
     z-index: 10;
-}.head{
+}
+.head{
     display: flex;
     width: 100%;
      
@@ -42,12 +43,12 @@ header {
 }
 
 .logo {
-    color: #27ae60;
+    color: #682204;
     font-weight: 700;
     font-size: 25px;
 }
 .logo span {
-    color: #273e60;
+    color: #976c08;
 }
 
 .menu li {
@@ -59,7 +60,7 @@ header {
     font-size: 14px;
     text-decoration: 0;
     align-items: center;
-    color: rgba( 255 149 140 );
+    color: rgb(163, 134, 6);
     position: relative;
     
     
@@ -72,7 +73,7 @@ header {
     width: 0;
     height: 2px;
     border-radius: 6px;
-    background-color: #27ae60;
+    background-color: #f08d8d;
     transition: 0.5s;
 }
 .menu li a:hover::before {
@@ -86,35 +87,34 @@ header {
     width: 0;
     height: 2px;
     border-radius: 6px;
-    background-color: #27ae60;
+    background-color: #f08d8d;
     transition: 0.5s;
 }
 .menu li a:hover::after {
     width: 100%;
 }
 .menu li a:hover {
-    color: #000;
+    color: #682204;
 }
 main{
-    height: 260vh;
+    height: 280vh;
     width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 80%  20% ;
-    grid-template-rows: 100vh 100vh 60vh ;
-    background-color: rgb(242, 238, 238);
+    grid-template-rows: 100vh 100vh 80vh ;
 
 }
 
 .right{
-    background-color: rgb(233, 240, 240);
+    background-color: rgb(244, 241, 232);
     height: 100%;
     grid-column: 1/2;
     grid-row: 1/4;
 }
 
 .left{
-    background-color: rgb(129, 156, 156);
+    background-color: rgb(215, 207, 176);
     height: 100%;
     grid-column: 2/3;
     grid-row: 1/4;
@@ -123,7 +123,7 @@ main{
 }
 
 .Historique {
-    margin-top: 25px;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     margin-left: 10%;
@@ -139,12 +139,12 @@ main{
 }
 
 .Historique .his h1 {
-    color: rgba( 23 86 118 );
+    color: rgba(79, 1, 1, 0.942);
     font-size: 40px;
 }
 .Historique .his p {
     font-size: 12px;
-    color: #999;
+    color: rgb(118, 118, 118);
 }
 
 .Historique .toire {
@@ -266,7 +266,7 @@ main{
     justify-content: center;
     flex-direction: row;
     gap: 20px;
-    padding: 50px 10px;
+    padding: 40px 10px;
 }
 .Global_aspect{
     width: 45%;
@@ -277,11 +277,17 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.Global_aspect img{
+    width: 400px;
+    height: 280px;
+    border-radius: 2%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .performance{
     width: 45%;
@@ -292,7 +298,6 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
     transition: 0.5s;
@@ -306,7 +311,7 @@ footer{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20%  20% 20% 20% 20% ;
-    grid-template-rows:20vh;
+    grid-template-rows: 20vh;
     background-color: rgb(108, 62, 62);
 
 }
@@ -338,7 +343,6 @@ footer div:nth-of-type(2){
     grid-column: 5/6;
     grid-row: 1/2;
 
-}
 
 
 /* Responsive */
@@ -405,4 +409,5 @@ footer div:nth-of-type(2){
         margin: 15px 0;
     }
 
+}
 }
