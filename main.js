@@ -1,5 +1,3 @@
-
-
 var small_menu = document.querySelector('.toggle_menu')
 var menu = document.querySelector('.menu')
 
