@@ -155,7 +155,7 @@ main {
 
 .Historique .his p {
   font-size: 12px;
-  color: rgb(118, 118, 118);
+  color: rgb(32, 45, 69);
 }
 
 .Historique .toire {
@@ -174,7 +174,7 @@ main {
 }
 
 .inauguration {
-  margin-top: 50px;
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   margin-left: 10%;
@@ -192,13 +192,29 @@ main {
 }
 
 .inauguration .his h1 {
-  color: rgb(23, 86, 118);
+  color: rgb(184, 133, 4);
   font-size: 40px;
 }
 
 .inauguration .his p {
   font-size: 12px;
-  color: #999;
+  color: rgb(32, 18, 18);
+}
+
+.m {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.inauguration .his img {
+  width: 250px;
+  height: 180px;
+  -webkit-animation: animate 3s linear;
+          animation: animate 3s linear;
+  transition: 0.3s;
 }
 
 /* animation image */
@@ -252,7 +268,8 @@ main {
 .passionate .passion {
   height: 200px;
   width: 80%;
-  background-color: rgba(176, 208, 211, 0.9);
+  background-color: #976c08;
+  opacity: 0, 5;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -287,14 +304,15 @@ main {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(44, 110, 73);
+  background-color: rgb(237, 163, 121);
 }
 
 .block {
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,7 +324,7 @@ main {
 .Global_aspect {
   width: 45%;
   height: 100vh;
-  background-color: rgba(162, 197, 145, 0.9);
+  background-color: rgba(240, 181, 181, 0.6784313725);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -329,7 +347,7 @@ main {
 .performance {
   width: 45%;
   height: 100vh;
-  background-color: rgba(176, 208, 211, 0.9);
+  background-color: rgba(240, 181, 181, 0.6784313725);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -348,36 +366,35 @@ footer {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20vh;
-  background-color: rgb(108, 62, 62);
 }
 
 footer div:nth-of-type(1) {
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
   height: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
 footer div:nth-of-type(2) {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
   grid-column: 2/3;
   grid-row: 1/2;
 }
 
 footer div:nth-of-type(3) {
-  background-color: rgb(252, 255, 255);
+  background-color: rgb(255, 255, 255);
   grid-column: 3/4;
   grid-row: 1/2;
 }
 
 footer div:nth-of-type(4) {
-  background-color: rgb(30, 42, 174);
+  background-color: rgb(255, 255, 255);
   grid-column: 4/5;
   grid-row: 1/2;
 }
 
 footer div:nth-of-type(5) {
-  background-color: rgb(133, 21, 122);
+  background-color: rgb(255, 255, 255);
   grid-column: 5/6;
   grid-row: 1/2;
   /* Responsive */
