@@ -382,11 +382,27 @@ main {
     padding: 0 20px;
   }
   main {
-    flex-direction: column;
-    height: 1000vh;
+    height: 650vh;
     width: 100%;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    background-color: rgb(244, 241, 232);
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 560vh 80vh 10vh;
+  }
+  .right {
+    background-color: rgb(244, 241, 232);
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .left {
+    background-color: rgba(97, 47, 47, 0.831);
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    overflow-y: scroll;
   }
   .toggle_menu {
     display: flex;
@@ -473,6 +489,13 @@ main {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
   .block {
     margin-top: 5vh;
     display: flex;
@@ -507,16 +530,31 @@ main {
     margin-bottom: 10px;
     margin-top: 10px;
   }
-  .m {
+  .performance {
+    width: 300px;
+    height: 70vh;
+    background-color: rgba(240, 181, 181, 0.6784313725);
+    padding: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
     justify-content: center;
-  }
-  .left {
-    background-color: rgba(97, 47, 47, 0.831);
     flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .performance h1 {
+    color: rgba(79, 1, 1, 0.942);
+    font-size: 18px;
+  }
+  .performance h2 {
+    color: rgba(148, 86, 11, 0.942);
+    font-size: 12px;
+  }
+  .performance p {
+    color: rgba(148, 86, 11, 0.942);
+    font-size: 10px;
   }
   .passions {
     display: flex;
@@ -525,5 +563,45 @@ main {
     flex-direction: column;
     background-color: rgba(35, 9, 3, 0.2);
     padding: 50px 10px;
+  }
+  .passionate {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .passionate .passion {
+    height: 200px;
+    width: 80%;
+    background-color: rgba(241, 209, 134, 0.9294117647);
+    opacity: 0, 5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .passionate .passion img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+  }
+  .passionate .passion p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .passionate .passion a {
+    font-size: 14px;
+    -webkit-text-decoration: 0;
+            text-decoration: 0;
+    align-items: center;
+    color: rgb(197, 83, 38);
+    position: relative;
   }
 }/*# sourceMappingURL=style.css.map */
